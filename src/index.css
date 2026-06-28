@@ -1,0 +1,169 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #faf7f2;
+  color: #222;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  width: 100%;
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  transition: transform 0.6s ease;
+}
+
+button {
+  cursor: pointer;
+  font: inherit;
+  transition: all 0.35s ease;
+}
+
+button:hover {
+  transform: translateY(-4px);
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+video:focus-visible {
+  outline: 3px solid #b7794b;
+  outline-offset: 3px;
+}
+
+input,
+textarea,
+button {
+  border: none;
+  background: none;
+}
+
+section {
+  overflow: hidden;
+  scroll-margin-top: 90px;
+}
+
+.btn-primary {
+  background: #b7794b;
+  color: #fff;
+  padding: 14px 34px;
+  border-radius: 9999px;
+  transition: all 0.35s ease;
+}
+
+.btn-primary:hover {
+  background: #9b6238;
+  transform: translateY(-4px);
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-18px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4ede5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b7794b;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9b6238;
+}
+
+::selection {
+  background: #b7794b;
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  body {
+    font-size: 15px;
+  }
+}
