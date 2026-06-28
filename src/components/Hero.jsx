@@ -2,7 +2,7 @@ const Hero = () => {
     return (
         <section
             id="home"
-            className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-[#FCFAF8] via-[#F8F2EB] to-[#F4E6D8] pt-32 lg:pt-36 pb-28 lg:pb-32"
+            className="container"
         >
             {/* Background */}
 
@@ -17,7 +17,7 @@ const Hero = () => {
                 <div>
 
                     <span className="uppercase tracking-[7px] text-sm font-semibold text-amber-700">
-                        Luxury Skincare Collection
+                        SkinCare By Adina
                     </span>
 
                     <h1 className="mt-6 text-5xl md:text-6xl xl:text-7xl font-black leading-none">

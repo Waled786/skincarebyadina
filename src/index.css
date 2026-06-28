@@ -167,3 +167,28 @@ section {
     font-size: 15px;
   }
 }
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-inline: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-inline: 4rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    padding-inline: 5rem;
+  }
+}

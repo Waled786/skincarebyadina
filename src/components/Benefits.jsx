@@ -32,7 +32,7 @@ const Benefits = () => {
     return (
         <section className="bg-[#FCFAF8] py-28 lg:py-32">
 
-            <div className="max-w-7xl mx-auto px-6 lg:px-8">
+            <div className="container">
 
                 {/* Heading */}
 

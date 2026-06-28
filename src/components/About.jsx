@@ -4,7 +4,7 @@ const About = () => {
             id="about"
             className="bg-[#faf7f2] py-28 lg:py-32"
         >
-            <div className="max-w-7xl mx-auto grid items-center gap-16 px-6 lg:grid-cols-2 lg:gap-24 lg:px-8">
+            <div className="container">
 
                 {/* Image */}
 

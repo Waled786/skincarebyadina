@@ -7,7 +7,7 @@ const FeaturedProducts = () => {
             id="products"
             className="py-28 lg:py-32 bg-gradient-to-b from-white via-[#fdfbf8] to-[#faf7f2]"
         >
-            <div className="max-w-7xl mx-auto px-6 lg:px-8">
+            <div className="container">
 
                 {/* Heading */}
 

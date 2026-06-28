@@ -6,7 +6,7 @@ const Contact = () => {
             id="contact"
             className="py-28 lg:py-32 bg-[#FCFAF8]"
         >
-            <div className="max-w-5xl mx-auto px-6 lg:px-8">
+            <div className="container">
 
                 {/* Heading */}
 
@@ -61,7 +61,7 @@ const Contact = () => {
                         </h3>
 
                         <p className="text-gray-600 mt-3">
-                            +92 300 1234567
+                            +92 314 6090365
                         </p>
 
                     </div>
@@ -77,7 +77,7 @@ const Contact = () => {
                         </h3>
 
                         <p className="text-gray-600 mt-3">
-                            Lahore, Pakistan
+                            Mochi Wala Road, Gojra, TTK Singh
                         </p>
 
                     </div>
