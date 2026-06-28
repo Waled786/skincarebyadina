@@ -11,24 +11,24 @@ import { FaTiktok } from "react-icons/fa6";
 
 const Footer = () => {
     return (
-        <footer className="bg-[#171717] text-white pt-24 pb-10">
+        <footer className="bg-[#171717] text-white pt-32 pb-16">
 
             <div className="container">
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-16 lg:gap-24 pb-20">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-16 lg:gap-24 pb-24">
 
                     {/* Brand */}
 
                     <div>
 
-                        <h2 className="text-4xl lg:text-3xl font-bold tracking-wide">
+                        <h2 className="text-4xl font-bold tracking-wide">
                             Glow
                             <span className="text-amber-500">
                                 Essence
                             </span>
                         </h2>
 
-                        <p className="mt-5 max-w-sm text-gray-300 leading-8 text-[16px]">
+                        <p className="mt-6 max-w-sm text-gray-300 leading-8 text-[16px]">
                             Premium skincare crafted with botanical ingredients,
                             modern science and elegant design to create a luxurious
                             self-care experience.
@@ -144,21 +144,21 @@ const Footer = () => {
 
                 {/* Bottom */}
 
+                <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
 
+                    <p className="text-gray-500 text-sm text-center md:text-left">
+                        © 2026 GlowEssence. All Rights Reserved.
+                    </p>
 
-                <p className="text-gray-500 text-sm text-center md:text-left">
-                    © 2026 GlowEssence. All Rights Reserved.
-                </p>
+                    <p className="text-gray-500 text-sm text-center md:text-right">
+                        Designed & Developed by Waleed • 007
+                    </p>
 
-                <p className="text-gray-500 text-sm text-center md:text-right">
-                    Designed & Developed by Waleed • 007
-                </p>
+                </div>
 
             </div>
 
-        </div>
-
-        </footer >
+        </footer>
     );
 };
 
