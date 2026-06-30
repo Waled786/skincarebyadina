@@ -11,7 +11,7 @@ const FeaturedProducts = () => {
 
                 {/* Heading */}
 
-                <div className="max-w-3xl mx-auto text-center mb-20">
+                <div className="mb-20 text-center">
 
                     <span className="inline-block mb-4 font-semibold uppercase tracking-[6px] text-amber-700">
                         Featured Collection
@@ -21,16 +21,18 @@ const FeaturedProducts = () => {
                         Our Best Sellers
                     </h2>
 
-                    <p className="mt-6 text-lg leading-8 text-gray-600">
-                        Discover luxurious skincare products crafted with premium botanical
-                        ingredients to nourish, hydrate and reveal naturally radiant skin.
-                    </p>
+                    <div className="mt-6 flex justify-center">
+                        <p className="max-w-2xl text-center text-lg leading-9 text-gray-600">
+                            Discover luxurious skincare products crafted with premium botanical
+                            ingredients to nourish, hydrate and reveal naturally radiant skin.
+                        </p>
+                    </div>
 
                 </div>
 
                 {/* Product Cards */}
 
-                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div className="mt-24 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
                     {products.map((product, index) => (
 
@@ -57,7 +59,7 @@ const FeaturedProducts = () => {
 
                             {/* Content */}
 
-                            <div className="flex flex-1 flex-col p-10">
+                            <div className="flex flex-1 flex-col items-center px-8 py-9 text-center">
 
                                 <span className="text-sm font-semibold uppercase tracking-[3px] text-amber-700">
                                     {product.category}
@@ -67,25 +69,29 @@ const FeaturedProducts = () => {
                                     {product.title}
                                 </h3>
 
-                                <p className="mt-6 flex-1 leading-8 text-gray-600">
+                                <p className="mt-6 flex-1 max-w-[280px] leading-8 text-gray-600">
                                     Carefully formulated using nature-inspired ingredients
                                     that deeply nourish, protect and restore your skin's
                                     healthy glow.
                                 </p>
 
-                                <div className="mt-10 pt-8 border-t border-gray-100 flex items-center justify-between">
+                                <div className="mt-10 w-full border-t border-gray-100 pt-8">
 
-                                    <span className="rounded-full bg-amber-100 px-5 py-2 text-sm font-medium text-amber-700">
-                                        Premium Care
-                                    </span>
+                                    <div className="flex items-center justify-center gap-25">
 
-                                    <button className="group/button flex items-center gap-2 font-semibold text-amber-700 transition-all duration-300">
+                                        <span className="rounded-full bg-amber-100 px-5 py-3 text-[12px] font-semibold tracking-wide text-amber-700">
+                                            Premium Care
+                                        </span>
 
-                                        Explore
+                                        <button className="group/button flex items-center gap-1 rounded-full px-4 py-2 text-sm font-semibold text-amber-700 transition-all duration-300 hover:bg-amber-50">
 
-                                        <FaArrowRight className="transition-transform duration-300 group-hover/button:translate-x-1" />
+                                            <span>Explore</span>
 
-                                    </button>
+                                            <FaArrowRight className="transition-transform duration-300 group-hover/button:translate-x-1" />
+
+                                        </button>
+
+                                    </div>
 
                                 </div>
 

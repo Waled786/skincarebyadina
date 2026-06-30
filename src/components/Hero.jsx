@@ -36,41 +36,53 @@ const Hero = () => {
                         your skin while revealing a naturally healthy glow.
                     </p>
 
-                    <div className="flex flex-wrap gap-5 mt-12">
+                    {/* Action Buttons */}
 
-                        <button className="rounded-full bg-amber-700 px-9 py-4 text-white shadow-xl transition-all duration-300 hover:bg-amber-800 hover:-translate-y-1">
-                            Shop Collection
-                        </button>
+                    {/* CTA + Statistics */}
 
-                        <button className="rounded-full border-2 border-amber-700 px-9 py-4 text-amber-700 transition-all duration-300 hover:bg-amber-700 hover:text-white hover:-translate-y-1">
-                            Learn More
-                        </button>
+                    <div className="mt-14">
 
-                    </div>
+                        {/* Action Buttons */}
 
-                    <div className="flex flex-wrap gap-6 mt-20">
+                        <div className="flex flex-wrap items-center gap-6">
 
-                        <div className="min-w-[180px] rounded-[32px] bg-white px-8 py-7 shadow-xl">
+                            <button className="btn-primary min-w-[190px] h-14 px-8 text-base font-medium flex items-center justify-center">
+                                Shop Collection
+                            </button>
 
-                            <h3 className="text-4xl font-bold text-amber-700">
-                                15K+
-                            </h3>
-
-                            <p className="mt-2 text-gray-500">
-                                Happy Customers
-                            </p>
+                            <button className="rounded-full border-2 border-amber-700 min-w-[170px] h-14 px-8 text-base font-medium text-amber-700 transition-all duration-300 hover:bg-amber-700 hover:text-white hover:-translate-y-1">
+                                Learn More
+                            </button>
 
                         </div>
 
-                        <div className="min-w-[180px] rounded-[32px] bg-white px-8 py-7 shadow-xl">
+                        {/* Statistics */}
 
-                            <h3 className="text-4xl font-bold text-amber-700">
-                                50+
-                            </h3>
+                        <div className="mt-16 flex flex-wrap gap-8">
 
-                            <p className="mt-2 text-gray-500">
-                                Natural Products
-                            </p>
+                            <div className="min-w-[190px] rounded-[32px] bg-white px-8 py-7 shadow-xl">
+
+                                <h3 className="text-4xl text-center font-bold text-amber-700">
+                                    15K+
+                                </h3>
+
+                                <p className="mt-2 text-center text-gray-500">
+                                    Happy Customers
+                                </p>
+
+                            </div>
+
+                            <div className="min-w-[190px] rounded-[32px] bg-white px-8 py-7 shadow-xl">
+
+                                <h3 className="text-4xl text-center font-bold text-amber-700">
+                                    50+
+                                </h3>
+
+                                <p className="mt-2 text-center text-gray-500">
+                                    Natural Products
+                                </p>
+
+                            </div>
 
                         </div>
 
