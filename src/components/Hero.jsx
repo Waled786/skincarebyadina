@@ -44,7 +44,7 @@ const Hero = () => {
 
                         {/* Action Buttons */}
 
-                        <div className="flex flex-wrap items-center gap-6">
+                        {/* <div className="flex flex-wrap items-center gap-6">
 
                             <button className="btn-primary min-w-[190px] h-14 px-8 text-base font-medium flex items-center justify-center">
                                 Shop Collection
@@ -54,7 +54,7 @@ const Hero = () => {
                                 Learn More
                             </button>
 
-                        </div>
+                        </div> */}
 
                         {/* Statistics */}
 

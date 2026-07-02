@@ -30,13 +30,13 @@ const data = [
 
 const Benefits = () => {
     return (
-        <section className="bg-[#FCFAF8] py-28 lg:py-32">
+        <section className="bg-[#FCFAF8] py-32 lg:py-40">
 
             <div className="container">
 
                 {/* Heading */}
 
-                <div className="max-w-3xl mx-auto text-center">
+                <div className="mx-auto mb-20 flex max-w-25xl flex-col items-center text-center">
 
                     <span className="inline-block mb-4 font-semibold uppercase tracking-[6px] text-amber-700">
                         Why Choose Us
@@ -46,7 +46,7 @@ const Benefits = () => {
                         Skincare You Can Trust
                     </h2>
 
-                    <p className="mt-6 text-lg leading-8 text-gray-600">
+                    <p className="mt-6 max-w-3xl text-lg leading-9 text-gray-600">
                         Combining nature-inspired ingredients with modern skincare
                         science to create luxurious products that deliver visible
                         results.
@@ -56,27 +56,37 @@ const Benefits = () => {
 
                 {/* Cards */}
 
-                <div className="mt-20 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
 
                     {data.map((item, index) => (
 
                         <div
                             key={index}
-                            className="group rounded-[32px] border border-gray-100 bg-white p-9 shadow-lg transition-all duration-500 hover:-translate-y-2 hover:border-amber-200 hover:shadow-2xl"
+                            className="group flex flex-col items-center rounded-[32px] border border-gray-100 bg-white p-10 text-center shadow-lg transition-all duration-500 hover:-translate-y-2 hover:border-amber-200 hover:shadow-2xl"
                         >
 
-                            <div className="flex h-[88px] w-[88px] items-center justify-center rounded-2xl bg-amber-100 text-amber-700 transition-all duration-300 group-hover:bg-amber-700 group-hover:text-white">
+                            {/* Icon */}
+
+                            <div className="flex h-24 w-24 items-center justify-center rounded-3xl bg-amber-100 text-amber-700 transition-all duration-300 group-hover:bg-amber-700 group-hover:text-white">
 
                                 {item.icon}
 
                             </div>
 
-                            <h3 className="mt-8 text-2xl font-bold leading-tight">
+                            {/* Title */}
+
+                            <h3 className="mt-7 text-xl font-bold leading-snug">
+
                                 {item.title}
+
                             </h3>
 
-                            <p className="mt-5 leading-8 text-gray-600">
+                            {/* Description */}
+
+                            <p className="mt-5 text-base leading-8 text-gray-600">
+
                                 {item.text}
+
                             </p>
 
                         </div>

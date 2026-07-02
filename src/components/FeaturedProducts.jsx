@@ -18,12 +18,12 @@ const FeaturedProducts = () => {
                     </span>
 
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                        Our Best Sellers
+                        Our Best Procedures
                     </h2>
 
                     <div className="mt-6 flex justify-center">
                         <p className="max-w-2xl text-center text-lg leading-9 text-gray-600">
-                            Discover luxurious skincare products crafted with premium botanical
+                            Discover luxurious procedures crafted with premium botanical
                             ingredients to nourish, hydrate and reveal naturally radiant skin.
                         </p>
                     </div>

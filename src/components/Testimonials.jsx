@@ -21,13 +21,13 @@ const testimonials = [
 
 const Testimonials = () => {
     return (
-        <section className="bg-[#FAF7F2] py-28 lg:py-32">
+        <section className="bg-[#FAF7F2] py-32 lg:py-40">
 
             <div className="container">
 
                 {/* Heading */}
 
-                <div className="max-w-3xl mx-auto mb-20 text-center">
+                <div className="mx-auto mb-20 flex max-w-25xl flex-col items-center text-center">
 
                     <span className="inline-block mb-4 font-semibold uppercase tracking-[6px] text-amber-700">
                         Customer Stories
@@ -39,7 +39,7 @@ const Testimonials = () => {
                         Real Experiences.
                     </h2>
 
-                    <p className="mt-6 text-lg leading-8 text-gray-600">
+                    <p className="mt-6 max-w-3xl text-lg leading-9 text-gray-600">
                         Hear directly from customers who trust Glow Essence as
                         part of their everyday skincare routine.
                     </p>
@@ -57,7 +57,9 @@ const Testimonials = () => {
                             className="group overflow-hidden rounded-[32px] border border-gray-100 bg-white shadow-lg transition-all duration-500 hover:-translate-y-2 hover:border-amber-200 hover:shadow-2xl"
                         >
 
-                            <div className="aspect-[9/16] overflow-hidden bg-black">
+                            {/* Reduced Video Height */}
+
+                            <div className="aspect-[4/5] overflow-hidden bg-black">
 
                                 <video
                                     controls
@@ -73,17 +75,19 @@ const Testimonials = () => {
 
                             </div>
 
-                            <div className="rounded-b-[32px] p-9">
+                            {/* Content */}
 
-                                <h3 className="text-xl font-bold">
+                            <div className="flex flex-col items-center p-10 text-center">
+
+                                <h3 className="text-2xl font-bold">
                                     {item.name}
                                 </h3>
 
-                                <p className="mt-1 text-sm font-medium text-amber-700">
+                                <p className="mt-2 text-sm font-semibold uppercase tracking-[2px] text-amber-700">
                                     {item.title}
                                 </p>
 
-                                <p className="mt-5 leading-8 text-gray-600">
+                                <p className="mt-5 max-w-[280px] leading-8 text-gray-600">
                                     {item.description}
                                 </p>
 

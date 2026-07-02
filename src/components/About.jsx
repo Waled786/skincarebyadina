@@ -2,13 +2,13 @@ const About = () => {
     return (
         <section
             id="about"
-            className="bg-[#faf7f2] py-28 lg:py-32"
+            className="bg-[#faf7f2] pt-44 pb-44 lg:pt-52 lg:pb-52"
         >
             <div className="container">
 
                 {/* Image */}
 
-                <div className="relative order-2 flex justify-center lg:order-1">
+                {/* <div className="relative order-2 flex justify-center lg:order-1">
 
                     <div className="absolute -z-10 h-[90%] w-[90%] rounded-full bg-amber-100 opacity-50 blur-3xl"></div>
 
@@ -30,11 +30,13 @@ const About = () => {
 
                     </div>
 
-                </div>
+                </div> */}
 
                 {/* Content */}
 
-                <div className="order-1 lg:order-2">
+                {/* Content */}
+
+                <div className="mx-auto mb-25 flex max-w-25xl flex-col items-center text-center">
 
                     <span className="inline-block font-semibold uppercase tracking-[6px] text-amber-700">
                         About Glow Essence
@@ -46,50 +48,50 @@ const About = () => {
                         With Healthy Skin
                     </h2>
 
-                    <p className="mt-8 text-lg leading-8 text-gray-600">
+                    <p className="mt-8 max-w-4xl text-lg leading-8 text-gray-600">
                         Glow Essence blends botanical ingredients with modern skincare science
                         to create luxurious products that nourish, restore and protect every
                         skin type.
                     </p>
 
-                    <p className="mt-6 text-lg leading-8 text-gray-600">
+                    <p className="mt-5 max-w-4xl text-lg leading-8 text-gray-600">
                         Every product is thoughtfully formulated to deliver visible results while
                         maintaining a gentle and refreshing skincare experience you can trust.
                     </p>
 
                     {/* Statistics */}
 
-                    <div className="mt-12 grid grid-cols-2 gap-6">
+                    <div className="mt-14 mb-28 flex flex-wrap justify-center gap-8">
 
-                        <div className="rounded-[32px] border border-gray-100 bg-white p-7 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:border-amber-200 hover:shadow-2xl">
+                        <div className="w-[240px] rounded-[32px] border border-gray-100 bg-white px-8 py-8 text-center shadow-lg transition-all duration-300 hover:-translate-y-2 hover:border-amber-200 hover:shadow-2xl">
 
-                            <h3 className="text-4xl font-bold text-amber-700">
+                            <h3 className="text-3xl font-bold text-amber-700">
                                 100%
                             </h3>
 
-                            <p className="mt-2 text-gray-600">
-                                Natural Ingredients
+                            <p className="mt-3 text-lg text-gray-600">
+                                Safety Measures
                             </p>
 
                         </div>
 
-                        <div className="rounded-[32px] border border-gray-100 bg-white p-7 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:border-amber-200 hover:shadow-2xl">
+                        <div className="w-[240px] rounded-[32px] border border-gray-100 bg-white px-8 py-8 text-center shadow-lg transition-all duration-300 hover:-translate-y-2 hover:border-amber-200 hover:shadow-2xl">
 
-                            <h3 className="text-4xl font-bold text-amber-700">
-                                15K+
+                            <h3 className="text-3xl font-bold text-amber-700">
+                                200+
                             </h3>
 
-                            <p className="mt-2 text-gray-600">
-                                Happy Customers
+                            <p className="mt-3 text-lg text-gray-600">
+                                Standard Testimonials
                             </p>
 
                         </div>
 
                     </div>
 
-                    <button className="mt-12 rounded-full bg-amber-700 px-10 py-4 text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-amber-800">
-                        Discover Our Story
-                    </button>
+                    {/* <button className="mt-14 flex h-14 w-[220px] items-center justify-center rounded-full bg-amber-700 text-base font-medium text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-amber-800">
+                        Our Philosophy
+                    </button> */}
 
                 </div>
 

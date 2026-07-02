@@ -33,7 +33,7 @@ const Navbar = () => {
 
                     <li>
                         <a href="#products" className="hover:text-amber-700 transition-colors duration-300">
-                            Products
+                            Procedures
                         </a>
                     </li>
 
